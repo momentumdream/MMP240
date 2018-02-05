@@ -1,20 +1,24 @@
 body {
-    background-color: darkturquoise;
-    font-family: tahoma;
+    background-color: black;
+    font-family: arial;
     font-size: 20px;
-    color: azure;
+    color: cornflowerblue
 }
-h1{
-    color: lightblue;
+    
+h1 {
+    border-bottom: 3px dotted lightblue;
+    color: white;
     text-align: center
     
+    }
     
         
-}
+
 ul {
     font-family: georgia;
     font-style: italic;
-    color: indianred;
+    color: darkturquoise;
+    
     
 } 
 

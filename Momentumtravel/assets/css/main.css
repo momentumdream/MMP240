@@ -1,11 +1,4 @@
-@charset "UTF-8";
-@import url(font-awesome.min.css);
-@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700");
-
-/*
-	Hielo by TEMPLATED
-	templated.co @templatedco
-	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+@import url('https://fonts.googleapis.com/css?family=Questrial|Shadows+Into+Light');
 */
 
 /* Reset */
@@ -1634,7 +1627,8 @@
 	}
 
 	body, input, select, textarea {
-		font-family: "Poppins", sans-serif;
+		font-family: 'Questrial', sans-serif;
+		font-family: 'Shadows Into Light', cursive;;
 		font-weight: 300;
 		font-size: 1rem;
 		line-height: 1.65;

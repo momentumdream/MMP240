@@ -1,9 +1,9 @@
 @charset "UTF-8";
-/*@import url();*/
-/*@import url("300,400,500,600,700");*/
+@import url('https://fonts.googleapis.com/css?family=Questrial|Shadows+Into+Light');
 
 
- Reset 
+
+/* Reset */
 
 	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
 		margin: 0;
@@ -14,26 +14,28 @@
 		vertical-align: baseline;
 	}
 
-	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
-		display: block;
+    article, aside {
+    display: block;
+    }
+
+    details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+		display: inline-table;
 	}
 
 	body {
 		line-height: 3;
         background-color: #ffffff;
-        background-size: 400px 300px; 
-        background-repeat: repeat;
+        background-size: 1400px 300px; 
+/*        background-repeat: repeat;*/
 /*        padding: 100px;*/
-        color: #00002b;
+/*        color: #00002b;*/
         text-align: center;
-/*        font-family: 'Shadows Into Light', cursive;*/
-/*         font-family: 'Questrial', sans-serif;*/
+        font-family: 'Shadows Into Light', cursive;
+        font-family: 'Questrial', sans-serif;
         
           
             
-/*            ul{ list-style: none;*/
-                
-            }
+        }
 
             a{
                 font-family: sans-serif;
@@ -48,7 +50,7 @@ h1{
    
 }
 
-	ol, ul {
+	ol,ul {
 		list-style: none;
 	}
 
@@ -238,7 +240,7 @@ h1{
 /* Grid */
 
 	.row {
-		border-bottom: solid 10px black;
+		border-bottom: solid 1px white;
 		-moz-box-sizing: border-box;
 		-webkit-box-sizing: border-box;
 		box-sizing: border-box;
@@ -1693,7 +1695,7 @@ h1{
 
 		p.special {
 			text-transform: uppercase;
-			font-size:1.5rem;
+			font-size:4.5rem;
 			font-weight: 400rem;
 			margin: 0 0 .10rem 0;
 			padding: 0 0 1rem 0;
@@ -1715,7 +1717,7 @@ h1{
 	h1 {
 		font-weight: 300;
         font-family: 'Shadows Into Light', cursive;
-        font-size: 10rem;
+        font-size: 9.5rem;
 		line-height: 5rem;
 		margin: 0rem 1rem 0;
 	}
@@ -1727,15 +1729,16 @@ h1{
 
 	h2 {
         font-family: 'Shadows Into Light', cursive;
-        line-height: 7.6rem;
-		font-size: 3rem;
-        color:
+        line-height: 5.rem;
+		font-size: 4.5rem;
+        margin: auto
+        color: #f8a94d;    
 	}
 
     h3  {
     font-family: 'Shadows Into Light', cursive;
     line-height: normal;
-    font-size: 2rem;
+    font-size: 3.75rem;
         
 }
 
@@ -1761,7 +1764,7 @@ h1{
 /*	code {*/
 		border-radius: 2px;
 		border: solid 1px;
-		font-family: "Courier New", monospace;
+		font-family: "Questrial", monospace;
 		font-size: 0.9rem;
 		margin: 0 0.25rem;
 		padding: 0.25rem 0.65rem;
@@ -1769,7 +1772,7 @@ h1{
 
 	pre {
 		-webkit-overflow-scrolling: touch;
-		font-family: "Courier New", monospace;
+		font-family: "Questrial", monospace;
 		font-size: 0.9rem;
 		margin: 0 0 2rem 0;
 	}
@@ -1804,11 +1807,11 @@ h1{
 	}
 
 	input, select, textarea {
-		color: #555;
+		color: #fff;
 	}
 
 	strong, b {
-		color: #555;
+		color: #fff;
 	}
 
 /*	h1, h2, h3, h4, h5, h6 {*/
@@ -1831,10 +1834,13 @@ h1{
 /* Box */
 
 	.box {
-		margin-bottom: 1rem;
-		background: #FFF;
+		margin-bottom: 2rem;
+		background: #fff;
 	}
-
+    .box2{
+        margin-bottom: inherit;
+    
+}
 		.box .image.fit {
 			margin: 0px;
 			border-radius: 0px;
@@ -1845,7 +1851,7 @@ h1{
 			}
 
 		.box header h2 {
-			margin-bottom: 1rem;
+			margin-bottom: 10rem;
 		}
 
 		.box header p {
@@ -1870,7 +1876,8 @@ h1{
 			}
 
 		.box .content {
-			padding: 3 rem;
+			padding: 1rem;
+            margin-bottom:inherit;
 		}
 
 		.box > :last-child,
@@ -1914,17 +1921,17 @@ h1{
 		transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 		border-radius: 2px;
 		border: 0;
-		cursor: crosshair;
-		display: inline-block;
-        font-family: 'Questrial', sans-serif
-		font-weight: 300;
+		cursor: pointer;
+		display: block;
+        font-family: "Questrial", "sans-serif";
+		font-weight 300;
 		height: 2.85rem;
 		line-height: 2.95rem;
 		padding: 0 1.5rem;
 		text-align: center;
 		text-decoration: none;
 		text-transform: uppercase;
-		white-space: nowrap;
+		white-space:pre-wrap;
 	}
 
 		input[type="submit"].icon,
@@ -1932,7 +1939,7 @@ h1{
 		input[type="button"].icon,
 		button.icon,
 		.button.icon {
-			padding-left: 5rem;
+			padding-left: 1.5rem;
 		}
 
 			input[type="submit"].icon:before,
@@ -1940,7 +1947,7 @@ h1{
 			input[type="button"].icon:before,
 			button.icon:before,
 			.button.icon:before {
-				margin-right: 0.5rem;
+				margin-right: 1.5rem;
 			}
 
 		input[type="submit"].fit,
@@ -2005,7 +2012,7 @@ h1{
 	.button {
 		background-color: #ffffff;
 		color: #f8a94d; 
-/*            !important;*/
+            !important;
 	}
 
 		input[type="submit"]:hover,
@@ -2031,7 +2038,7 @@ h1{
 		.button.alt {
 			background-color: transparent;
 			box-shadow: inset 0 0 0 2px rgba(144, 144, 144, 0.25);
-			color: #555 !important;
+			color: #fff !important;
 		}
 
 			input[type="submit"].alt:hover,
@@ -2039,7 +2046,7 @@ h1{
 			input[type="button"].alt:hover,
 			button.alt:hover,
 			.button.alt:hover {
-/*				background-color: rgba(144, 144, 144, 0.075);*/
+                background-color: rgba(144, 144, 144, 0.075);
 			}
 
 			input[type="submit"].alt:active,
@@ -2047,7 +2054,7 @@ h1{
 			input[type="button"].alt:active,
 			button.alt:active,
 			.button.alt:active {
-/*				background-color: rgba(144, 144, 144, 0.2);*/
+				background-color: rgba(144, 144, 144, 0.2);
 			}
 
 			input[type="submit"].alt.icon:before,
@@ -2055,7 +2062,7 @@ h1{
 			input[type="button"].alt.icon:before,
 			button.alt.icon:before,
 			.button.alt.icon:before {
-/*				color: #f8a94d;*/
+				color: #f8a94d;
 			}
 
 		input[type="submit"].special,
@@ -2063,8 +2070,8 @@ h1{
 		input[type="button"].special,
 		button.special,
 		.button.special {
-/*			background-color: #8a4680;*/
-/*			color: #ffffff !important;*/
+			background-color: #8a4680;
+			color: #ffffff !important;
 		}
 
 			input[type="submit"].special:hover,
@@ -2072,7 +2079,7 @@ h1{
 			input[type="button"].special:hover,
 			button.special:hover,
 			.button.special:hover {
-/*				background-color: #9b4f90;*/
+            background-color: #000;
 			}
 
 			input[type="submit"].special:active,
@@ -2080,20 +2087,20 @@ h1{
 			input[type="button"].special:active,
 			button.special:active,
 			.button.special:active {
-/*				background-color: #793d70;*/
 			}
 
 /* Form */
 
 	form {
-		margin: 0 0 2rem 0;
+		margin:  1rem 6rem 1rem 6rem ;
 	}
 
 	label {
-		display: block;
+		display: table;
+        text-align: justify;
 		font-size: 1.5rem;
-		font-weight: 700;
-		margin: 0 0 1rem 0;
+		font-weight: 300;
+		margin: 1rem 0 1rem 0;
 	}
 
 	input[type="text"],
@@ -2105,13 +2112,12 @@ h1{
 		-webkit-appearance: none;
 		-ms-appearance: none;
 		appearance: none;
-		border-radius: 2px;
-		border: none;
-		border: solid 1px;
+		border-radius: 0px;
+		border: solid 1.5px;
 		color: #fff;
-		display: block;
-		outline: 0;
-		padding: 0 1rem;
+		display: inline-grid;
+		outline: 2px;
+		padding: 10 1rem;
 		text-decoration: none;
 		width: 100%;
 	}
@@ -2121,19 +2127,19 @@ h1{
 		input[type="email"]:invalid,
 		select:invalid,
 		textarea:invalid {
-			box-shadow: none;
+			box-shadow: 10px;
 		}
 
 	.select-wrapper {
 		text-decoration: none;
-		display: block;
+		display: inline;
 		position: relative;
 	}
 
 		.select-wrapper:before {
 			-moz-osx-font-smoothing: grayscale;
 			-webkit-font-smoothing: antialiased;
-			font-family: FontAwesome;
+			font-family: "Questrial";
 			font-style: normal;
 			font-weight: normal;
 			text-transform: none !important;
@@ -2160,10 +2166,12 @@ h1{
 	input[type="password"],
 	input[type="email"],
 	select {
-		height: 3.75rem;
+        font-family: "Questrial";
+		height: 2.5rem;
 	}
 
 	textarea {
+        font-family: "Questrial";
 		padding: 1.75rem 1rem;
 	}
 
@@ -2174,7 +2182,7 @@ h1{
 		-ms-appearance: none;
 		appearance: none;
 		display: block;
-		float: left;
+		float: right;
 		margin-right: -2rem;
 		opacity: 0;
 		width: 1rem;
@@ -2186,6 +2194,7 @@ h1{
 			text-decoration: none;
 			cursor: pointer;
 			display: inline-block;
+            font-family: "Questrial";
 			font-size: 10rem;
 			font-weight: 400;
 			padding-left: 2.4rem;
@@ -2220,11 +2229,12 @@ h1{
 
 		input[type="checkbox"]:checked + label:before,
 		input[type="radio"]:checked + label:before {
+            border-radius: 20px;
 			content: '\f00c';
 		}
 
 	input[type="checkbox"] + label:before {
-		border-radius: 2px;
+		border-radius: 20px;
 	}
 
 	input[type="radio"] + label:before {
@@ -2248,11 +2258,13 @@ h1{
 	}
 
 	.formerize-placeholder {
-		opacity: 1.0;
+        font-family: "Questrial";
+		opacity: 10;
 	}
 
 	label {
-		color: #555;
+        font-family: "Questrial"; "san-serif";
+		color: white;
 	}
 
 	input[type="text"],
@@ -2260,8 +2272,11 @@ h1{
 	input[type="email"],
 	select,
 	textarea {
-		background: rgba(144, 144, 144, 0.075);
-		border-color: rgba(144, 144, 144, 0.25);
+        font-family: "Questrial"; "sans-serif";
+        color:#000;
+        text-align: center;
+		background: #fff;
+		border-color: #bbe5ed;
 	}
 
 		input[type="text"]:focus,
@@ -2269,12 +2284,14 @@ h1{
 		input[type="email"]:focus,
 		select:focus,
 		textarea:focus {
-			border-color: #8a4680;
-			box-shadow: 0 0 0 1px #8a4680;
+            font-family: "Questrial";
+            border: 5px;
+			border-color: #bbe5ed;
+			box-shadow: 0 0 0 1px #bbe5ed;
 		}
 
 	.select-wrapper:before {
-		color: rgba(144, 144, 144, 0.25);
+		color: #000;
 	}
 
 	input[type="checkbox"] + label,
@@ -2290,9 +2307,9 @@ h1{
 
 	input[type="checkbox"]:checked + label:before,
 	input[type="radio"]:checked + label:before {
-		background-color: #8a4680;
-		border-color: #8a4680;
-		color: #ffffff;
+		background-color: #fff;
+		border-color: red;
+		color: #000;
 	}
 
 	input[type="checkbox"]:focus + label:before,
@@ -2332,7 +2349,6 @@ h1{
 		.icon:before {
 			-moz-osx-font-smoothing: grayscale;
 			-webkit-font-smoothing: antialiased;
-			font-family: FontAwesome;
 			font-style: normal;
 			font-weight: normal;
 			text-transform: none !important;
@@ -2387,7 +2403,7 @@ h1{
 			}
 
 		.image.main {
-			display: block;
+			display: inline-block;
 			margin: 0 0 3rem 0;
 			width: 100%;
 		}
@@ -2580,7 +2596,7 @@ h1{
 	}
 
 	header p {
-		position: relative;
+		position: static;
 		margin: 0 0 1.5rem 0;
 	}
 
@@ -2602,7 +2618,7 @@ h1{
 	}
 
 	header p {
-		color: #bbb;
+		color: #fff;
 	}
 
 /* Table */
@@ -3124,7 +3140,7 @@ h1{
 		.wrapper.style3 {
 			background-color: #000;
 			color: #bfbfbf;
-			background-image: url(../../images/bg.jpg);
+			background-image: ;
 			background-size: cover;
 			background-attachment: fixed;
 			background-position: center;
@@ -3228,7 +3244,7 @@ h1{
 				.wrapper.style3 input[type="button"].special,
 				.wrapper.style3 button.special,
 				.wrapper.style3 .button.special {
-					background-color: #8a4680;
+					background-color: #000;
 					color: #ffffff !important;
 				}
 
@@ -3237,7 +3253,7 @@ h1{
 					.wrapper.style3 input[type="button"].special:hover,
 					.wrapper.style3 button.special:hover,
 					.wrapper.style3 .button.special:hover {
-						background-color: #9b4f90;
+						background-color: #000;
 					}
 
 					.wrapper.style3 input[type="submit"].special:active,
@@ -3245,7 +3261,7 @@ h1{
 					.wrapper.style3 input[type="button"].special:active,
 					.wrapper.style3 button.special:active,
 					.wrapper.style3 .button.special:active {
-						background-color: #793d70;
+						background-color: #000;
 					}
 
 			.wrapper.style3 label {
@@ -3266,8 +3282,8 @@ h1{
 				.wrapper.style3 input[type="email"]:focus,
 				.wrapper.style3 select:focus,
 				.wrapper.style3 textarea:focus {
-					border-color: #8a4680;
-					box-shadow: 0 0 0 1px #8a4680;
+					border-color: #fff;
+					box-shadow: 0 0 0 1px #fff;
 				}
 
 			.wrapper.style3 .select-wrapper:before {
@@ -3287,15 +3303,15 @@ h1{
 
 			.wrapper.style3 input[type="checkbox"]:checked + label:before,
 			.wrapper.style3 input[type="radio"]:checked + label:before {
-				background-color: #8a4680;
-				border-color: #8a4680;
+				background-color: #000;
+				border-color: #fff;
 				color: #ffffff;
 			}
 
 			.wrapper.style3 input[type="checkbox"]:focus + label:before,
 			.wrapper.style3 input[type="radio"]:focus + label:before {
-				border-color: #8a4680;
-				box-shadow: 0 0 0 1px #8a4680;
+				border-color: #fff;
+				box-shadow: 0 0 0 1px #fff;
 			}
 
 			.wrapper.style3 ::-webkit-input-placeholder {
@@ -3420,7 +3436,7 @@ h1{
 		@media screen and (max-width: 736px) {
 
 			.wrapper {
-				padding: 3rem 0 1rem 0 ;
+				padding: 10rem 0 1rem 0 ;
 			}
 
 		}
@@ -3552,7 +3568,7 @@ h1{
 
 	.gallery {
 		width: 100%;
-		margin: 2.5rem 0 2.5rem 0;
+		margin: 1.5rem 0 1.5rem 0;
 		display: -moz-flex;
 		display: -webkit-flex;
 		display: -ms-flex;
@@ -3583,24 +3599,24 @@ h1{
 		}
 
 		.gallery > * {
-			padding: 2rem;
+			padding: 1.5rem;
 			width: calc(50% + 2rem);
 		}
 
 		.gallery > :nth-child(-n + 2) {
-			padding-top: 0;
+			padding-top: 1.5rem;
 		}
 
 		.gallery > :nth-last-child(-n + 2) {
-			padding-bottom: 0;
+			padding-bottom: 1.5rem;
 		}
 
 		.gallery > :nth-child(2n + 1) {
-			padding-left: 0;
+			padding-left: 1.5rem;
 		}
 
 		.gallery > :nth-child(2n) {
-			padding-right: 0;
+			padding-right: 1.5rem;
 		}
 
 		.gallery > :nth-child(2n + 1),
@@ -3614,7 +3630,7 @@ h1{
 		}
 
 			.gallery .image.fit {
-				margin: 0;
+				margin: 10px;
 			}
 
 		@media screen and (max-width: 980px) {
@@ -3629,51 +3645,51 @@ h1{
 			}
 
 			.gallery > :nth-child(-n + 2) {
-				padding-top: 1rem;
+				padding-top: .25rem;
 			}
 
 			.gallery > :nth-last-child(-n + 2) {
-				padding-bottom: 1rem;
+				padding-bottom: .25rem;
 			}
 
 			.gallery > :nth-child(2n + 1) {
-				padding-left: 1rem;
+				padding-left: .25rem;
 			}
 
 			.gallery > :nth-child(2n) {
-				padding-right: 1rem;
+				padding-right: .25rem;
 			}
 
 			.gallery > :nth-child(2n + 1),
 			.gallery > :nth-child(2n) {
-				padding: 1rem;
+				padding: .25rem;
 				width: calc(100% + 2rem);
 			}
 
 			.gallery > * {
-				padding: 1rem;
+				padding: .25rem;
 				width: calc(100% + 2rem);
 			}
 
 			.gallery > :nth-child(-n + 1) {
-				padding-top: 0;
+				padding-top: 10px;
 			}
 
 			.gallery > :nth-last-child(-n + 1) {
-				padding-bottom: 0;
+				padding-bottom: 10px;
 			}
 
 			.gallery > :nth-child(1n + 1) {
-				padding-left: 0;
+				padding-left: 10px;
 			}
 
 			.gallery > :nth-child(1n) {
-				padding-right: 0;
+				padding-right: 10px;
 			}
 
 			.gallery > :nth-child(1n + 1),
 			.gallery > :nth-child(1n) {
-				width: calc(100% + 1rem);
+				width: calc(100% + 0rem);
 			}
 
 		}
@@ -3681,7 +3697,7 @@ h1{
 /* Header */
 
 	body.subpage {
-		padding-top: 3.25em;
+		padding-top: 10.25em;
 	}
 
 	@-moz-keyframes reveal-header {
@@ -3733,7 +3749,7 @@ h1{
 	}
 
 	#header {
-		background: rgba(0, 0, 0, 0.975);
+		background:transparent;
 		color: #a6a6a6;
 		cursor: default;
 		height: 3.25em;
@@ -3758,8 +3774,8 @@ h1{
 		}
 
 			#header > .logo a {
-				font-size: 1.25em;
-				color: #FFF;
+				font-size: 9.25em;
+				color: #21b2bf;
 				text-decoration: none;
 			}
 
@@ -3768,8 +3784,8 @@ h1{
 				}
 
 			#header > .logo span {
-				font-weight: 400;
-				font-size: .8em;
+				font-weight: 800;
+				font-size: 10.8em;
 				color: rgba(255, 255, 255, 0.65);
 			}
 
@@ -3778,11 +3794,11 @@ h1{
 			-webkit-transition: color 0.2s ease-in-out;
 			-ms-transition: color 0.2s ease-in-out;
 			transition: color 0.2s ease-in-out;
-			display: inline-block;
+			display: block;
 			padding: 0 0.75em;
 /*			color: inherit;*/
-			text-decoration: none;
-			color: #FFF;
+			text-decoration: overline;
+			color: #fff;
 		}
 
 			#header > a:hover {
@@ -3795,10 +3811,10 @@ h1{
 			}
 
 				#header > a[href="#menu"]:before {
-					content: "";
+					content: "";
 					-moz-osx-font-smoothing: grayscale;
 					-webkit-font-smoothing: antialiased;
-					font-family: FontAwesome;
+					font-family: "Questrial";
 					font-style: normal;
 					font-weight: normal;
 					text-transform: none !important;
@@ -3825,7 +3841,7 @@ h1{
 				}
 
 					#header > a + a[href="#menu"]:last-child {
-						padding-left: 1em;
+						padding-left: 10em;
 						margin-left: 0.25em;
 					}
 
@@ -3870,15 +3886,15 @@ h1{
 
 		#header {
 			height: 44px;
-			line-height: 44px;
+			line-height: 84px;
 		}
 
 			#header > h1 {
-				left: 1em;
+				left: 2em;
 			}
 
 				#header > h1 a {
-					font-size: 1em;
+					font-size: 2em;
 				}
 
 	}
@@ -3886,7 +3902,7 @@ h1{
 	@media screen and (max-width: 480px) {
 
 		#header {
-			min-width: 320px;
+			min-width: 420px;
 		}
 
 	}
@@ -3898,22 +3914,22 @@ h1{
 		-webkit-transform: translateX(20rem);
 		-ms-transform: translateX(20rem);
 		transform: translateX(20rem);
-		-moz-transition: -moz-transform 0.5s ease, box-shadow 0.5s ease, visibility 0.5s;
-		-webkit-transition: -webkit-transform 0.5s ease, box-shadow 0.5s ease, visibility 0.5s;
-		-ms-transition: -ms-transform 0.5s ease, box-shadow 0.5s ease, visibility 0.5s;
-		transition: transform 0.5s ease, box-shadow 0.5s ease, visibility 0.5s;
+		-moz-transition: -moz-transform 0.5s ease, box-shadow .25s ease, visibility 0.5s;
+		-webkit-transition: -webkit-transform 0.5s ease, box-shadow 0.25s ease, visibility 0.5s;
+		-ms-transition: -ms-transform 0.5s ease, box-shadow 0.25s ease, visibility 0.5s;
+		transition: transform 0.5s ease, box-shadow 0.5s ease, visibility 0.25s;
 		-webkit-overflow-scrolling: touch;
-		background: rgba(0, 0, 0, 0.95);
-		box-shadow: none;
-		color: #000;
+		background: ;
+		box-shadow: 100%;
+		color:;
 		height: 100%;
 		max-width: 80%;
 		overflow-y: auto;
-		padding: 3rem 2rem;
+		padding: 1.0rem .5rem;
 		position: fixed;
 		right: 0;
 		top: 0;
-		visibility: visible;
+		visibility: hidden;
 		width: 20rem;
 		z-index: 10002;
 	}
@@ -3924,11 +3940,11 @@ h1{
 
 			#menu > ul.links {
 				list-style: none;
-				padding: 1px;
+				padding: 10px;
 			}
 
 				#menu > ul.links > li {
-					padding: 0;
+					padding: 10px;
 				}
 
 					#menu > ul.links > li > a:not(.button) {
@@ -3937,8 +3953,8 @@ h1{
 /*						color: rgba(255, 255, 255, 0.5);*/
 						display: block;
 						line-height: 3.0rem;
-						text-decoration: none;
-/*						text-transform: uppercase;*/
+						text-decoration:none;
+						text-transform: none;
 					}
 
 						#menu > ul.links > li > a:not(.button):hover {
@@ -3962,7 +3978,7 @@ h1{
 			transition: color 0.2s ease-in-out;
 			-webkit-tap-highlight-color: transparent;
 			border: 0;
-/*			color: #999999;*/
+			color: #999999;
 			cursor: pointer;
 			display: block;
 			height: 3.25rem;
@@ -3979,7 +3995,7 @@ h1{
 			#menu .close:before {
 				-moz-osx-font-smoothing: grayscale;
 				-webkit-font-smoothing: antialiased;
-/*				font-family: FontAwesome;*/
+				font-family: "Questrial";
 				font-style: normal;
 				font-weight: normal;
 				text-transform: none !important;
@@ -3998,7 +4014,7 @@ h1{
 
 				#menu .close {
 					height: 4rem;
-					line-height: 10rem;
+					line-height: 4rem;
 				}
 
 			}
@@ -4020,13 +4036,15 @@ h1{
 
 		}
 
-/* Banner */
+/* Banner 
 
+/*main banner*/
 	.banner {
-/*		background-color: #8a4680;*/
-/*		color: #e2d1df;*/
-		padding: 200px;
-		position: sticky;
+		background-color: #000;
+		color: #fff;
+		padding: 8 em 0;
+		position: ;
+        
 	}
 
 		.banner input, .banner select, .banner textarea {
@@ -4059,7 +4077,7 @@ h1{
 		}
 
 		.banner.full {
-			padding: 10px; 
+			padding: 0; 
 			min-height: 100vh;
 			height: 100vh !important;
 		}
@@ -4081,8 +4099,8 @@ h1{
 			transition: opacity 1.5s ease-in-out, visibility 1.5s;
 			background: #000000;
 			content: '';
-			display: inline-block;
-			height: 200%;
+			display: block;
+			height: 100%;
 			left: 0;
 			opacity: 0;
 			position: absolute;
@@ -4095,9 +4113,9 @@ h1{
 		.banner .indicators {
 			bottom: 1.5em;
 			left: 0;
-			list-style: none;
-			margin: 10;
-			padding: 10;
+			list-style:circle;
+			margin: 0;
+			padding: 0;
 			position: absolute;
 			text-align: center;
 			width: 100%;
@@ -4211,7 +4229,7 @@ h1{
 					right: 0;
 					bottom: 0;
 					left: 0;
-					width: 50%;
+					width: 70%;
 					height: 1px;
 					background-color: rgba(255, 255, 255, 0.65);
 				}
@@ -4226,7 +4244,7 @@ h1{
 			}
 
 			.banner > article.visible {
-				opacity: 10;
+				opacity: 1;
 				visibility: visible;
 			}
 
@@ -4242,7 +4260,7 @@ h1{
 			}
 
 		body.is-loading .banner:after {
-			opacity: 5.0;
+			opacity: 1.0;
 			visibility: visible;
 		}
 

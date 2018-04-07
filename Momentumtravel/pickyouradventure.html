@@ -4,45 +4,53 @@
 		<title>Pick Your Adventure</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link href="https://fonts.googleapis.com/css?family=Questrial|Shadows+Into+Light" rel="stylesheet">
-		<link rel="stylesheet" href="main.css" />
+        <link rel="stylesheet" href="main.css" />
+        <link href="https://fonts.googleapis.com/css?family=Questrial|Shadows+Into+Light" rel="stylesheet">
 	</head>
 
     <body>
         
 <!-- Header -->
-			<header id="header">
+			<header id="header" class="alt">
 				<div class="logo"><a href="index.html"></a></div>
 				<a href="#menu">Menu</a>
 			</header>
+        
+        
 
 		<!-- Nav -->
-			<nav id="menu">
+<nav id="menu">
 				<ul class="links">
 					<li><a href="index.html">Home</a></li>
-					<li><a href="pickyouradventure.html">Pick Your Adventure</a></li>
 					<li><a href="taketheplunge.html">Take the Plunge</a></li>
+                    <li><a href="pickyouradventure.html">Pick Your Adventure</a></li>
 				</ul>
 			</nav>
-            
-            <section class="banner full">
-		 <article>
-			    <img src="lookout.jpg">
-            	</article>
-	    </section>
+                                                                     
+                                                                                                
             
             
-            
-            <!-- Two -->
-			<section id="three" class="wrapper style4">
-				<div class="inner">
-  		<header class="align-center">
-            <p class="special">Where do you want to explore?</p>
+<!--            BANNER-->
+        <section class="banner full">
+            <article>
+                <img src="lookout.jpg" alt""/>
+                <div class="inner">
+                    <header><h3>Go see for yourself.</h3>
+                    </header>
+                </div>
+            </article>
+        </section>
 
-				
+        
+        
+        <article>
+			<section id="three" class="wrapper style4">
+  		<header class="align-center">
+            <p>Where do you want to explore?</p>
 					</header>
-				</div>
-			</section>         
+            </section>
+                </article>
+		       
         
         
                 
@@ -51,164 +59,69 @@
 			<footer id="footer form">
 				<div class="inner">
         <section>
-            
-        </section>
-                    
-                    
-                    
-                    
-    
-
-					<form action="#" method="post">
-
-						<div class="field half first">
-							<label for="name"></label>
-							<input name="name" id="name" type="text" placeholder="Name">
-						</div>
-						<div class="field half">
-							<label for="email"></label>
-							<input name="email" id="email" type="email" placeholder="Email">
-						</div>
-						<div class="field">
-							<label for="message"></label>
-							<textarea name="message" id="message" rows="4" placeholder="Message"></textarea>
-						</div>
-						<ul class="actions">
-							<li><input value="Send us a Note" class="button alt" type="submit"></li>
-						</ul>
-					</form>
-                     <section id="three" class="wrapper style4">
-                    <div class="inner">
-                        <p></p>
-                        <p></p>
-                        <p></p>
-                        
-                        </div>
-                    
                     </section>
-                
-                    
-                    
-                    
-<!--		 Footer -->
-                    
-			<footer id="footer">
-				<div class="container">
-				</div>
-				<div class="copyright">
-                    &copy; Momentum Travel 2018.</div>
-                <div class="container">
-                    All rights reserved.
-				</div>
-			</footer>
-				
-      
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/skel.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-        
-                </div>
-        </footer>
-        </body>        
-        
-</html>
-            
-            
-<!-- 				
-    	<section id="three" class="wrapper style2">
-				<div class="inner">
-					<header class="align-center">
-						<p class="special">Nature is calling</p>
-						<h2>Start living again and leave your phone behind!</h2>
-					</header>
-            </div>
-            </section>
-        
-        
-<!-- Two -->
-			<section id="three" class="wrapper style3">
-				<div class="inner">
-  		<header class="align-center">
-                <img src="waterfall.jpg">
-            <p class="special">Where do you want to explore?</p>
-            <h2>Contact us today!</h2>
-						
-					</header>
-				</div>
-			</section>
-    
-  
-    
-    <!-- Three -->
-<!--        <section id="three" class="wrapper style2">-->
-<!--				<div class="inner">-->
-<!--					<header class="align-center">-->
-<!--						<p class="special">Nature is calling</p>-->
-						
-<!--					</header>-->
-
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-		
-                    <!-- Footer -->
-			<footer id="footer form">
-				<div class="inner">
-        <section>
-            
-        </section>
-                    
-                    
-                    
-                    
+            </div>  
     
 
 					<form action="#" method="post">
 
 						<div class="field half first">
 							<label for="name">Name</label>
-							<input name="name" id="name" type="text" placeholder="Name">
+							<input name="name" id="name" type="text" placeholder="What do your friend's call you?">
 						</div>
 						<div class="field half">
 							<label for="email">Email</label>
-							<input name="email" id="email" type="email" placeholder="Email">
+							<input name="email" id="email" type="email" placeholder="You can trust us with your email and we promise not to spam you.">
 						</div>
 						<div class="field">
-							<label for="message">Message</label>
-							<textarea name="message" id="message" rows="4" placeholder="Message"></textarea>
+							<label for="message">Answer these Quick Q's</label>
+							<textarea name="message" id="message" rows="5" placeholder="What kind of adven ture do you want to embark on?Are you traveling solo or with a group? Rockefeller Budget or Shoestring funds?"></textarea>
 						</div>
+                         <onclick="myFunction1()">
 						<ul class="actions">
 							<li><input value="Send us a Note" class="button alt" type="submit"></li>
 						</ul>
+                        </onclick>
 					</form>
-
-					
-
-					<div class="copyright">
-						&copy; Momentum Travel 2018
-					</div>
-
+                
+                    
+                    
+                    
+<!--		 Footer -->
+              <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+			<footer id="footer">
+				<div class="container">
+				<div class="copyright">
+                    &copy; Momentum Travel 2018.</div>
+                    All rights reserved.
 				</div>
+                </div>
 			</footer>
+				
       
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/skel.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+		<!--		 Scripts --> 
+                <script>
+                function myFunction1() {
+    var x = document.getElementById("myEmail").href;
+    document.getElementById("demo"). innerHTML = x;
+}
+                
+                
+                </script>
+        	<script src="JS/jquery.min.js"></script>
+			<script src="JS/jquery.scrollex.min.js"></script>
+			<script src="JS/skel.min.js"></script>
+			<script src="JS/util.js"></script>
+			<script src="JS/main.js"></script>    
+        </footer>
         
-
         </body>        
         
 </html>
-<!--  --> -->

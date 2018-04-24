@@ -1,0 +1,134 @@
+/**
+ * The primary stylesheet for the CSS Grid Playground.
+ * This sheet pulls in surrounding components allowing you to focus on specifics.
+ */
+
+/* Components */
+@import url('CSS/reset.css');
+@import url('CSS/accessibility.css');
+@import url('CSS/layout.css');
+@import url('CSS/typography.css');
+@import url('CSS/masthead.css');
+@import url('CSS/boxes.css');
+
+/* CSS Grid Playground */
+
+.the-grid{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 4fr repeat(4, 1fr);
+            }
+
+.blue{
+    grid-column-start: 1;
+    grid-column-end: 5;
+        }
+
+.purple{
+    grid-column-start: 1;
+    grid-column-end: 5;
+        }
+    
+
+.green{
+    grid-column-start: 1;
+    grid-column-end: 5;
+        }
+
+.yellow{
+    grid-column-start: 1;
+    grid-column-end: 5;
+    }
+
+.orange{
+    grid-column-start: 1;
+    grid-column-end: 5;
+    }   
+
+.red{
+    grid-column-start: 1;
+    grid-column-end: 5;
+    }
+
+.slate{
+    grid-column-start: 1;
+    grid-column-end: 5;
+    }
+
+.lineblue{
+    grid-column-start: 1;
+    grid-column-end: 5;
+        }
+
+@media screen and (min-width: 750px){
+    .the-grid{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: 1fr 4fr 1fr 1fr;
+        grid-column-gap: 10px;
+        grid-row-gap: 20px;
+            }
+    
+    .purple{
+        grid-column-start: 1;
+        grid-column-end:1;
+        grid-row-start:2;
+        grid-row-end: 2;
+            }
+    
+    .green{
+        grid-column-start: 2;
+        grid-column-end: 5;
+        grid-row-start: 2;
+        grid-row-end: 2
+        
+            }
+   
+}
+
+@media screen and (min-width: 1000px){
+    .the-grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 2fr 2fr 1fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 5px;
+            }
+    
+    .purple{
+        grid-area: 2;
+        
+            }
+    .green{
+        grid-area: 2;
+       
+            }
+    .yellow{
+        grid-area:2;
+        
+            }
+    .orange{
+        grid-area: 3;
+        
+        
+            }
+    .red{
+        grid-area: 3;
+        
+            }
+    
+    .slate{
+        grid-area: 3;
+        
+    }
+
+
+
+
+
+
+
+
+
+
+}
